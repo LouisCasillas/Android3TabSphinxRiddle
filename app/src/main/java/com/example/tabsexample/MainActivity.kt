@@ -44,6 +44,15 @@ class MainActivity : AppCompatActivity() {
         for (i in imageResId.indices) {
             tab_tablayout.getTabAt(i)?.setIcon(imageResId[i])
         }
+
+        val tabTitles = arrayOf<String> (
+            "Baby",
+            "Man",
+            "Old Man"
+        )
+        for (i in imageResId.indices) {
+            tab_tablayout.getTabAt(i)?.setText(tabTitles[i])
+        }
     }
 
     // This function is used to add items in arraylist and assign
